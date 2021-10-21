@@ -28,6 +28,18 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
+  padding: 50px 15px;
+  text-align: left;
+}
+
+#headline-section h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+article {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 nav ul {
