@@ -81,13 +81,15 @@ nav ul li {
   }
 }
 
-.social-media-icons img {
-  display: inline;
-  flex-direction: row;
-  padding: 6px;
+.social-media-icons ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 14px;
+  margin-top: -10px;
 }
 
-.social-media-icons {
-  margin-top: -20px;
-  margin-left: -7px;
+.social-media-icons li {
+  list-style: none;
+  padding-right: 20px;
 }
