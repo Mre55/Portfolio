@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+
+.header-logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+.only-mobile {
+  display: none;
+}
+
+#headline-section {
+  background: url("./Images/Header\ bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  padding: 60px 15px 70px 15px;
+  text-align: left;
+}
+
+#headline-section h1 {
+  font-weight: 700;
+  font-size: 39px;
+}
+
+#headline-section p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #7f8cff;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.headline-text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 365px) {
+  #headline-section {
+    background: url("./Images/header-shapes\ mobile@2x.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+}
+
+.social-media-icons ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 14px;
+  margin-top: -10px;
+}
+
+.social-media-icons li {
+  list-style: none;
+  padding-right: 20px;
+}
