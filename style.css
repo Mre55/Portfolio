@@ -28,18 +28,27 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
-  padding: 50px 15px;
+  padding: 60px 15px 70px 15px;
   text-align: left;
 }
 
 #headline-section h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 39px;
+}
+
+#headline-section h4 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #7f8cff;
+  margin-top: 15px;
+  text-align: left;
 }
 
 article {
   font-weight: 400;
   font-size: 16px;
+  margin-top: -25px;
 }
 
 nav ul {
@@ -70,4 +79,15 @@ nav ul li {
   header {
     justify-content: space-between;
   }
+}
+
+.social-media-icons img {
+  display: inline;
+  flex-direction: row;
+  padding: 6px;
+}
+
+.social-media-icons {
+  margin-top: -20px;
+  margin-left: -7px;
 }
