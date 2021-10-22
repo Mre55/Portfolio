@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-  background: #f7f7f9;
   font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background: #f7f7f9;
+}
+
+button:enabled {
+  background: none;
+  color: #396df2;
+}
+
+button:hover {
+  background: #6070ff;
+  color: white;
+}
+
+button:active {
+  background: #081dda;
+  color: white;
+}
+
+button:disabled {
+  background: #ebebff;
+  color: black;
 }
 
 header {
@@ -169,10 +192,6 @@ nav ul li {
   display: inline;
 }
 
-.buttons:hover {
-  background: #ebebff;
-}
-
 .see-project-btn {
   padding: 12px;
   border-radius: 8px;
@@ -185,10 +204,6 @@ nav ul li {
   margin-top: 0;
 }
 
-.see-project-btn:hover {
-  background: #ebebff;
-}
-
 .get-my-resume-btn {
   padding: 12px;
   border-radius: 8px;
@@ -199,10 +214,6 @@ nav ul li {
   font-weight: 400;
   font-size: 15px;
   margin-top: 0;
-}
-
-.get-my-resume-btn:hover {
-  background: #ebebff;
 }
 
 #about-section {
