@@ -8,6 +8,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 30px;
 }
 
@@ -17,6 +18,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .only-mobile {
@@ -27,28 +29,35 @@ header {
   background: url("./Images/Header\ bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
-  padding: 60px 15px 70px 15px;
+  height: 71px;
+  padding: 60px 20px 70px 15px;
   text-align: left;
+  border-bottom-left-radius: 20%;
 }
 
 #headline-section h1 {
   font-weight: 700;
-  font-size: 39px;
+  font-size: 40px;
+  color: #172b4d;
+  line-height: 52px;
 }
 
 #headline-section p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
   color: #7f8cff;
   margin-top: 15px;
   text-align: left;
 }
 
 .headline-text {
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
-  margin-top: -25px;
+  margin-top: -20px;
+  color: #344563;
 }
 
 nav ul {
@@ -62,10 +71,10 @@ nav ul li {
 
 @media screen and (max-width: 365px) {
   #headline-section {
-    background: url("./Images/header-shapes\ mobile@2x.svg");
+    background: url("./Images/header-shapes-mobile@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 60vh;
   }
 
   .only-mobile {
@@ -86,10 +95,23 @@ nav ul li {
   justify-content: flex-start;
   padding-left: 0;
   padding-right: 14px;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .social-media-icons li {
   list-style: none;
   padding-right: 20px;
+}
+
+.work-container {
+  background: white;
+  height: 500px;
+  margin: 114px 24px 88px 24px;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
