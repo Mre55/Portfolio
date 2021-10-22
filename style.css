@@ -44,9 +44,8 @@ header {
 
 .work-description p {
   color: #344563;
-  margin-top: 0;
+  margin-top: -5px;
   font-size: 15px;
-  line-height: 24px;
   font-weight: normal;
 }
 
@@ -124,9 +123,10 @@ nav ul li {
   align-items: center;
 }
 
-.work-one-img img {
+.work-img img {
   width: 255px;
   height: 220px;
+  border-radius: 8px;
 }
 
 .work-description h2 {
@@ -135,6 +135,7 @@ nav ul li {
 
 .client-des {
   display: flex;
+  margin-top: -7px;
 }
 
 .client-des ul {
@@ -148,4 +149,36 @@ nav ul li {
   list-style: none;
   color: #344563;
   font-size: 14px;
+}
+
+.buttons {
+  padding: 0;
+}
+
+.buttons button {
+  background: #ebebff;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 12px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.buttons li {
+  list-style: none;
+  display: inline;
+}
+
+.see-project-btn {
+  padding: 12px;
+  border-radius: 8px;
+  top: calc(50% - 48px / 2);
+  background: none;
+  color: #396df2;
+  border: 1px solid #396df2;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
 }
