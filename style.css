@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-  background: #f7f7f9;
   font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background: #f7f7f9;
+}
+
+button:enabled {
+  background: none;
+  color: #396df2;
+}
+
+button:hover {
+  background: #6070ff;
+  color: white;
+}
+
+button:active {
+  background: #081dda;
+  color: white;
+}
+
+button:disabled {
+  background: #ebebff;
+  color: black;
 }
 
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 30px;
 }
 
@@ -17,6 +41,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .only-mobile {
@@ -24,31 +49,35 @@ header {
 }
 
 #headline-section {
-  background: url("./Images/Header\ bg.svg");
+  background: url("./Images/Header-bg.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-  padding: 60px 15px 70px 15px;
+  background-size: cover;
+  height: 70vh;
+  padding: 60px 20px 70px 15px;
   text-align: left;
+  border-bottom-left-radius: 20%;
 }
 
 #headline-section h1 {
   font-weight: 700;
-  font-size: 39px;
+  font-size: 40px;
+  color: #172b4d;
+  line-height: 52px;
 }
 
-#headline-section p {
-  font-weight: 500;
-  font-size: 18px;
-  color: #7f8cff;
-  margin-top: 15px;
-  text-align: left;
+.work-description p {
+  color: #344563;
+  margin-top: -5px;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .headline-text {
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
-  margin-top: -25px;
+  margin-top: -20px;
+  color: #344563;
 }
 
 nav ul {
@@ -62,10 +91,10 @@ nav ul li {
 
 @media screen and (max-width: 365px) {
   #headline-section {
-    background: url("./Images/header-shapes\ mobile@2x.svg");
+    background: url("./Images/header-shapes-mobile@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 60vh;
   }
 
   .only-mobile {
@@ -86,10 +115,155 @@ nav ul li {
   justify-content: flex-start;
   padding-left: 0;
   padding-right: 14px;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .social-media-icons li {
   list-style: none;
   padding-right: 20px;
+}
+
+#work-section {
+  display: grid;
+}
+
+.work-container {
+  background: white;
+  height: 500px;
+  margin: 114px 24px 88px 24px;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.work-img img {
+  width: 255px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.work-description h2 {
+  margin: 0;
+}
+
+.client-des {
+  display: flex;
+  margin-top: -7px;
+}
+
+.client-des ul {
+  padding: 0;
+  padding-right: 25px;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.client-name li {
+  list-style: none;
+  color: #344563;
+  font-size: 14px;
+}
+
+.buttons {
+  padding: 0;
+}
+
+.buttons button {
+  background: #ebebff;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 12px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.buttons li {
+  list-style: none;
+  display: inline;
+}
+
+.see-project-btn {
+  padding: 12px;
+  border-radius: 8px;
+  top: calc(50% - 48px / 2);
+  background: none;
+  color: #396df2;
+  border: 1px solid #396df2;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.get-my-resume-btn {
+  padding: 12px;
+  border-radius: 8px;
+  top: calc(50% - 48px / 2);
+  background: none;
+  color: #396df2;
+  border: 1px solid #396df2;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+#about-section {
+  background: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 60px 20px 70px 15px;
+  border-top-right-radius: 78px;
+}
+
+#about-section h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #172b4d;
+  line-height: 52px;
+}
+
+.let-connect {
+  color: #7f8cff;
+}
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.categories li {
+  list-style: none;
+}
+
+.categories {
+  padding: 0;
+}
+
+.categories ul {
+  padding: 0;
+}
+
+.categories button {
+  width: 100%;
+  display: flex;
+  height: 67px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+  background: #f7f7f9;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 10px;
+}
+
+.categories button:hover {
+  background: #ebebff;
+}
+
+.categories img {
+  padding: 9px 16px 9px 2px;
 }
