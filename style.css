@@ -26,10 +26,10 @@ header {
 }
 
 #headline-section {
-  background: url("./Images/Header\ bg.svg");
+  background: url("./Images/Header-bg.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 71px;
+  background-size: cover;
+  height: 70vh;
   padding: 60px 20px 70px 15px;
   text-align: left;
   border-bottom-left-radius: 20%;
@@ -40,6 +40,14 @@ header {
   font-size: 40px;
   color: #172b4d;
   line-height: 52px;
+}
+
+.work-description p {
+  color: #344563;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
 }
 
 #headline-section p {
@@ -114,4 +122,30 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.work-one-img img {
+  width: 255px;
+  height: 220px;
+}
+
+.work-description h2 {
+  margin: 0;
+}
+
+.client-des {
+  display: flex;
+}
+
+.client-des ul {
+  padding: 0;
+  padding-right: 25px;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.client-name li {
+  list-style: none;
+  color: #344563;
+  font-size: 14px;
 }
