@@ -169,6 +169,10 @@ nav ul li {
   display: inline;
 }
 
+.buttons:hover {
+  background: #ebebff;
+}
+
 .see-project-btn {
   padding: 12px;
   border-radius: 8px;
@@ -181,6 +185,10 @@ nav ul li {
   margin-top: 0;
 }
 
+.see-project-btn:hover {
+  background: #ebebff;
+}
+
 .get-my-resume-btn {
   padding: 12px;
   border-radius: 8px;
@@ -191,6 +199,10 @@ nav ul li {
   font-weight: 400;
   font-size: 15px;
   margin-top: 0;
+}
+
+.get-my-resume-btn:hover {
+  background: #ebebff;
 }
 
 #about-section {
@@ -238,6 +250,10 @@ nav ul li {
   border: none;
   border-radius: 9px;
   margin-bottom: 10px;
+}
+
+.categories button:hover {
+  background: #ebebff;
 }
 
 .categories img {
