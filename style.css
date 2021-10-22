@@ -182,3 +182,31 @@ nav ul li {
   font-size: 15px;
   margin-top: 0;
 }
+
+.get-my-resume-btn {
+  padding: 12px;
+  border-radius: 8px;
+  top: calc(50% - 48px / 2);
+  background: none;
+  color: #396df2;
+  border: 1px solid #396df2;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+#about-section {
+  background: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60vh;
+  padding: 60px 20px 70px 15px;
+  border-top-right-radius: 78px;
+}
+
+#about-section h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #172b4d;
+  line-height: 52px;
+}
