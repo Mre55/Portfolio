@@ -72,16 +72,6 @@ header {
   font-weight: normal;
 }
 
-#headline-section p {
-  font-weight: 500;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 24px;
-  color: #7f8cff;
-  margin-top: 15px;
-  text-align: left;
-}
-
 .headline-text {
   font-weight: normal;
   font-style: normal;
@@ -229,6 +219,10 @@ nav ul li {
   font-size: 50px;
   color: #172b4d;
   line-height: 52px;
+}
+
+.let-connect {
+  color: #7f8cff;
 }
 
 .language {
