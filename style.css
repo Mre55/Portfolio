@@ -58,7 +58,7 @@ header {
   border-bottom-left-radius: 20%;
 }
 
-#headline-section h1 {
+#headline-section h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
@@ -89,7 +89,7 @@ nav ul li {
   padding: 0 30px;
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
   #headline-section {
     background: url("./Images/header-shapes-mobile@2x.svg");
     background-repeat: no-repeat;
@@ -138,12 +138,12 @@ nav ul li {
 }
 
 .work-img img {
-  width: 255px;
+  width: 100%;
   height: 220px;
   border-radius: 8px;
 }
 
-.work-description h2 {
+#work-section h2 {
   margin: 0;
 }
 
@@ -213,15 +213,20 @@ nav ul li {
   background: white;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 60px 20px 70px 15px;
+  padding: 114px 24px 110px 24px;
   border-top-right-radius: 78px;
 }
 
-#about-section h1 {
+#about-section h2 {
   font-weight: 700;
   font-size: 50px;
   color: #172b4d;
   line-height: 52px;
+  margin-top: 0;
+}
+
+#about-section .social-media-icons {
+  padding-left: 11px;
 }
 
 .let-connect {
