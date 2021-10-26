@@ -272,3 +272,37 @@ nav ul li {
 .categories img {
   padding: 9px 16px 9px 2px;
 }
+
+#contact-form {
+  background: url(./Images/Contact-form-bg.svg);
+  height: 100vh;
+}
+
+/* #contact-form img {
+  background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+} */
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 103px 24px 45px 24px;
+}
+
+#contact-form h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 0;
+}
+
+#contact-form p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
