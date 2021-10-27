@@ -275,9 +275,10 @@ nav ul li {
 }
 
 #contact-form {
-  background: url(./Images/Contact-form-bg.svg);
+  background: url('./Images/Contact-form-bg.svg');
   background-repeat: no-repeat;
   position: absolute;
+  background-size: cover;
   height: 632px;
   padding: 103px 24px 45px 24px;
   text-align: center;
@@ -288,6 +289,12 @@ nav ul li {
   top: 45px;
   height: 709px;
   left: 135px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .contact-text {
@@ -318,12 +325,12 @@ form input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 20px;
   border-radius: 8px;
   border: none;
   width: 80vw;
   padding: 15px 38px 15px 16px;
-  margin-left: 8px;
 }
 
 form textarea {
@@ -331,6 +338,10 @@ form textarea {
   border: none;
   padding: 15px 38px 15px 16px;
   color: #b3bac5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 #contact-form form button:enabled {
@@ -344,8 +355,6 @@ form textarea {
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  margin-left: -170px;
-  margin-top: 12px;
 }
 
 #contact-form form button:hover {
