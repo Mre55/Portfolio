@@ -121,7 +121,7 @@ nav ul li {
 .work-container {
   display: flex;
   background: white;
-  margin: 115px 20px 88px 21px;
+  margin: 115px 180px 88px 180px;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -269,11 +269,12 @@ nav ul li {
 #contact-form {
   display: flex;
   flex-direction: column;
-  background: url('./Images/Contact-form-bg.svg');
+  background: url("./Images/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 632px;
-  padding: 90px 150px;
+  background-color: #6070ff;
+  padding: 90px 50px;
+  border-top-left-radius: 20%;
   text-align: center;
 }
 
@@ -306,6 +307,7 @@ nav ul li {
   line-height: 28px;
   color: #ebebff;
   margin-top: 0;
+  max-width: 400px;
 }
 
 form input {
@@ -355,7 +357,7 @@ form textarea {
   color: black;
 }
 
-@media (min-width: 755px) {
+@media screen and (min-width: 995px) {
   #headline-section {
     background: url("./Images/Header-bg@2x.svg");
     background-repeat: no-repeat;
@@ -365,6 +367,15 @@ form textarea {
     text-align: left;
     border-bottom-left-radius: 20%;
     background-color: #fff;
+  }
+
+  #contact-form {
+    background: url("./Images/contact-form-desktop-bg-shapes@2x.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #6070ff;
+    padding: 90px 150px;
+    border-top-left-radius: 20%;
   }
 
   .only-mobile {
@@ -389,6 +400,7 @@ form textarea {
 
   .work-container {
     flex: 1;
+    margin: 50px;
   }
 
   .work-img {
@@ -439,10 +451,6 @@ form textarea {
     flex-direction: column;
     height: 110px;
     gap: 10px;
-  }
-
-  #contact-form {
-    padding: 90px 150px;
   }
 
   #contact-form p {
