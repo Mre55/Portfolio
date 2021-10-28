@@ -45,9 +45,9 @@ You can start using Portfolio by cloning the repository.
 
 👤 **Mihreteab Misganaw Aride**
 
-- GitHub: [@githubhandle](https://github.com/Mre55)
-- Twitter: [@twitterhandle](https://twitter.com/MreMisganaw)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mihreteab-misganaw-86249812b/)
+- GitHub: [@Mre55](https://github.com/Mre55)
+- Twitter: [@MreMisganaw](https://twitter.com/MreMisganaw)
+- LinkedIn: [mihreteab-misganaw-86249812b](https://www.linkedin.com/in/mihreteab-misganaw-86249812b/)
 
 ## 🤝 Contributing
 
