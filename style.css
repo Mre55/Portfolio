@@ -140,7 +140,7 @@ nav ul li {
 }
 
 .work-img:hover {
-  transition: transform 0.95s;
+  transition: transform 0.75s;
   transform: scale(1.07);
 }
 
