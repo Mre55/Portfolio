@@ -2,7 +2,7 @@
 
 This is basically about understand how to parse a Figma design to create a UI and use Flexbox to build personal Portfolio.
 
-![image](https://user-images.githubusercontent.com/34578631/138307967-b2a3d7fe-3a2a-48d3-acc5-1264a1a94696.png)
+![image](https://user-images.githubusercontent.com/34578631/139751134-9b43e2ec-66e9-4f73-8d74-011b995534dc.png)
 
 This Portfolio project set-up GitHub Actions that uses linter for HTML and CSS. This project contains two main sections that are the toolbar (or header) and the headline section (right after the header).
 
