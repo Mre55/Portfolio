@@ -64,8 +64,7 @@ header {
   background: url("./Images/header-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 50px 50px 70px;
-  height: 60vh;
+  padding: 100px 50px 50px 50px;
   background-color: #fff;
   border-bottom-left-radius: 20%;
 }
@@ -126,7 +125,7 @@ nav ul li {
 .work-container {
   display: flex;
   background: white;
-  margin: 115px 180px 88px 180px;
+  margin: 150px 20px 0 20px;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -292,7 +291,6 @@ nav ul li {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin: 20px auto;
 }
 
 .contact-text {
