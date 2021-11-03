@@ -76,6 +76,14 @@ header {
   line-height: 52px;
 }
 
+.work-container h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #172b4d;
+  line-height: 52px;
+  margin: 0;
+}
+
 .work-description p {
   color: #344563;
   margin-top: -5px;
@@ -232,7 +240,7 @@ nav ul li {
 }
 
 .let-connect {
-  color: #7f8cff;
+  color: #3446e5;
 }
 
 .language {
@@ -396,6 +404,10 @@ form textarea {
 
   .menu-bar {
     display: flex;
+  }
+
+  .menu-bar li a {
+    text-decoration: none;
   }
 
   .footer {
