@@ -58,7 +58,27 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: red;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu ul {
+  list-style: none; 
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.close-button{
+  border: none;
+  color: #ffffff;
 }
 
 .only-mobile {
