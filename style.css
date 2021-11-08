@@ -52,6 +52,15 @@ header {
   transform: scale(1.7);
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+}
+
 .only-mobile {
   display: block;
 }
