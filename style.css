@@ -32,9 +32,9 @@ button:disabled {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 10% 6%;
   background-color: #fff;
 }
 
@@ -64,9 +64,9 @@ header {
   background: url("./Images/header-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 50px 50px 50px;
+  padding: 100px 25px;
   background-color: #fff;
-  border-bottom-left-radius: 20%;
+  border-bottom-left-radius: 80px;
 }
 
 #headline-section h2 {
@@ -118,7 +118,7 @@ nav ul li {
   justify-content: flex-start;
   padding-left: 0;
   padding-right: 14px;
-  margin-top: -5px;
+  align-items: center;
 }
 
 .social-media-icons li {
@@ -128,16 +128,17 @@ nav ul li {
 
 #work-section {
   display: grid;
+  padding: 110px 20px 15px 20px;
 }
 
 .work-container {
   display: flex;
   background: white;
-  margin: 150px 20px 0 20px;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  padding: 23px;
+  padding: 16px;
+  margin-bottom: 90px;
 }
 
 .work-img img {
@@ -223,8 +224,8 @@ nav ul li {
   background: white;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 115px 45px 110px 45px;
-  border-top-right-radius: 78px;
+  padding: 114px 24px;
+  border-top-right-radius: 80px;
 }
 
 #about-section h2 {
@@ -291,14 +292,16 @@ nav ul li {
   background-size: cover;
   background-color: #5161f1;
   padding: 90px 50px;
-  border-top-left-radius: 20%;
+  border-top-left-radius: 80px;
   text-align: center;
+  align-items: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  max-width: 100%;
 }
 
 .contact-text {
@@ -343,6 +346,7 @@ form textarea {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #contact-form form button:enabled {
@@ -374,6 +378,13 @@ form textarea {
 }
 
 @media screen and (min-width: 995px) {
+  header {
+    display: flex;
+    padding: 10px 70px;
+    align-items: center;
+    background-color: #fff;
+  }
+
   #headline-section {
     background: url("./Images/Header-bg@2x.svg");
     background-repeat: no-repeat;
@@ -483,6 +494,6 @@ form textarea {
   }
 
   .form {
-    margin: 20px auto;
+    width: 450px;
   }
 }
