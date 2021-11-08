@@ -52,6 +52,11 @@ header {
   transform: scale(1.7);
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -75,8 +80,8 @@ header {
 }
 
 .mobile-menu ul {
-  list-style: none; 
-  color: #ffffff;
+  list-style: none;
+  color: #fff;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -87,7 +92,7 @@ header {
   border: none;
   cursor: pointer;
   outline: none;
-  color: #ffffff;
+  color: #fff;
   background: none;
   font-size: 2.25rem;
   font-weight: bold;
@@ -138,11 +143,6 @@ header {
   font-size: 16px;
   margin-top: -20px;
   color: #344563;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
 }
 
 nav ul li {

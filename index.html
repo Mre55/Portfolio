@@ -20,17 +20,16 @@
     <header>
         <a href="#headline-section" class="header-logo">Home</a>
         <nav>
-          <button data-mobile-menu-target="#mobile-menu">
+          <button class="only-mobile" data-mobile-menu-target="#mobile-menu">
             <img
-              class="only-mobile"
               src="./Images/Union.svg"
               alt="Hamburger Navbar Icon"
             />
           </button>
           <ul class="only-desktop menu-bar">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#headline-section">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-form">Contact</a></li>
           </ul>
         </nav>
      </header>
@@ -39,10 +38,10 @@
         <div class="mobile-menu-header">
           <button data-close-button class="close-button">&times;</button>
         </div>
-        <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul class="mobile-menu-list">
+          <li><a href="#headline-section">Portfolio</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
         </ul>
       </div>
       <section id="headline-section">
@@ -317,5 +316,6 @@
       </form>
      </section>
     </main>
+    <script defer src="./JS/script.js"></script>
   </body>
 </html>
