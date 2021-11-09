@@ -20,19 +20,30 @@
     <header>
         <a href="#headline-section" class="header-logo">Home</a>
         <nav>
-          <img
-            class="only-mobile"
-            src="./Images/Union.svg"
-            alt="Hamburger Navbar Icon"
-          />
+          <button class="only-mobile hamburger-btn" data-mobile-menu-target="#mobile-menu">
+            <img
+              src="./Images/Union.svg"
+              alt="Hamburger Navbar Icon"
+            />
+          </button>
           <ul class="only-desktop menu-bar">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#headline-section">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-form">Contact</a></li>
           </ul>
         </nav>
-     </header>
-    <main>
+      </header>
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <ul class="mobile-menu-list">
+          <li><a href="#headline-section">Portfolio</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </div>
+    <main class="main">
       <section id="headline-section">
         <h2>I’m Mihreteab <br> Glad to see you!</h2>
 
@@ -305,5 +316,6 @@
       </form>
      </section>
     </main>
+    <script defer src="./JS/script.js"></script>
   </body>
 </html>

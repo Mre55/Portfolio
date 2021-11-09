@@ -8,11 +8,13 @@ body {
 
 main {
   background: #f7f7f9;
+  padding-top: 80px;
 }
 
 button:enabled {
   background: none;
   color: #396df2;
+  border: none;
 }
 
 button:hover {
@@ -31,10 +33,12 @@ button:disabled {
 }
 
 header {
+  position: fixed;
+  width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10% 6%;
+  padding: 30px 24px;
   background-color: #fff;
 }
 
@@ -50,6 +54,65 @@ header {
 
 .header-logo:hover {
   transform: scale(1.7);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #1d2fd5;
+  mix-blend-mode: multiply;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.mobile-menu.active {
+  transform: scale(1);
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.mobile-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.close-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.close-button:enabled {
+  color: white;
+}
+
+.only-menu {
+  display: none;
 }
 
 .only-mobile {
@@ -97,11 +160,6 @@ header {
   font-size: 16px;
   margin-top: -20px;
   color: #344563;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
 }
 
 nav ul li {
@@ -291,7 +349,7 @@ nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5161f1;
-  padding: 90px 50px;
+  padding: 60px 50px;
   border-top-left-radius: 80px;
   text-align: center;
   align-items: center;
@@ -496,4 +554,13 @@ form textarea {
   .form {
     width: 450px;
   }
+}
+
+.fixed_postion {
+  position: fixed;
+  filter: blur(8px);
+}
+
+.hide {
+  display: none;
 }
