@@ -14,7 +14,6 @@ main {
 button:enabled {
   background: none;
   color: #396df2;
-  border: none;
 }
 
 button:hover {
@@ -74,13 +73,33 @@ nav ul {
   z-index: 10;
 }
 
+.project-detail {
+  height: 90vh;
+  width: 90vw;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  background: #d3d4e2;
+  mix-blend-mode: multiply;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.project-detail.active {
+  transform: scale(1);
+  background-color: white;
+}
+
 .mobile-menu.active {
   transform: scale(1);
 }
 
 .mobile-menu-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .mobile-menu ul {
@@ -95,6 +114,19 @@ nav ul {
 .mobile-menu-list a {
   color: white;
   text-decoration: none;
+}
+
+.close-button-project {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.close-button-project:enabled {
+  color: black;
 }
 
 .close-button {
@@ -563,4 +595,23 @@ form textarea {
 
 .hide {
   display: none;
+}
+
+.fixed_headline {
+  position: fixed;
+  filter: blur(8px);
+}
+
+.see-source {
+  display: flex;
+  width: 90%;
+  margin-right: 20px;
+}
+
+.see-source-img {
+  padding-left: 15px;
+}
+
+.project-detail-buttons {
+  display: flex;
 }
