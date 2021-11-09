@@ -8,7 +8,7 @@ body {
 
 main {
   background: #f7f7f9;
-  padding-top: 102px;
+  padding-top: 80px;
 }
 
 button:enabled {
@@ -38,7 +38,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10% 6%;
+  padding: 30px 24px;
+  background-color: #fff;
 }
 
 .header-logo {
