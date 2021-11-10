@@ -7,14 +7,13 @@ const mobile_menu = document.querySelector('.mobile-menu');
 
 const projectDetails = document.querySelectorAll('.see-project-btn')
 const projectDetail = document.querySelector('.project-detail');
-const projectDetailClose = document.querySelector('.close-button-project');
 
 
 const projects = [
     {
         id: 1,
         name:  "Tonic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         featured_image: "./Images/work-one-img.jpg",
         link_to_live: ["See live", "./Images/detailProjectLive.png"],
         link_to_source: ["See source", "./Images/detailProjectGit.png"],
@@ -24,7 +23,7 @@ const projects = [
     {
         id: 2,
         name:  "Multi-Post Stories",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         featured_image: "./Images/work-two-img.jpg",
         link_to_live: ["See live", "./Images/detailProjectLive.png"],
         link_to_source: ["See source", "./Images/detailProjectGit.png"],
@@ -34,7 +33,7 @@ const projects = [
     {
         id: 3,
         name:  "Tonic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         featured_image: "./Images/work-three-img.jpg",
         link_to_live: ["See live", "./Images/detailProjectLive.png"],
         link_to_source: ["See source", "./Images/detailProjectGit.png"],
@@ -44,7 +43,7 @@ const projects = [
     {
         id: 4,
         name:  "Multi-Post Stories",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         featured_image: "./Images/work-four-img.jpg",
         link_to_live: ["See live", "./Images/detailProjectLive.png"],
         link_to_source: ["See source", "./Images/detailProjectGit.png"],
@@ -101,7 +100,7 @@ projectDetails.forEach((button)=>{
         mainTag.classList.add('fixed_postion');
         projectDetail.classList.add('active');
         projectDetail.innerHTML = `
-        <article class="work-container flex project-1">
+        <article class="work-container flex project-detail-article project-flex">
             <div class="project-detail-header">
               <h3>${selected_project.name}</h3>
               <button data-close-button class="close-button-project">&times;</button>
@@ -120,11 +119,12 @@ projectDetails.forEach((button)=>{
           <div class="work-img">
             <img src=${selected_project.featured_image} alt="Picture for the project Tonic, showing a laptop and a widescreen." />
           </div>
-          <div class="work-description-project">
+          <div class="work-description-project project-detail-work-description">
             <p>
               ${selected_project.description}
             </p>
-            <ul class="buttons">
+            <div class="project-detail-tech-btns">
+            <ul class="buttons project-detail-buttons">
               <li><button type="button">${selected_project.technologies[0]}</button></li>
               <li><button type="button">${selected_project.technologies[1]}</button></li>
               <li><button type="button">${selected_project.technologies[2]}</button></li>
@@ -137,7 +137,14 @@ projectDetails.forEach((button)=>{
                   <img class="see-source-img" src=${selected_project.link_to_source[1]} alt="" /></button>
                 </a>
             </div>
+            </div>
           </div>
         </article>`;
+        const projectDetailClose = document.querySelector('.close-button-project');
+        projectDetailClose.addEventListener('click', (e)=>{
+            mainTag.classList.remove('fixed_postion');
+            projectDetail.classList.remove('active');
+
+        })
     })
 })

@@ -8,7 +8,7 @@ body {
 
 main {
   background: #f7f7f9;
-  padding-top: 80px;
+  padding-top: 75px;
 }
 
 button:enabled {
@@ -33,7 +33,7 @@ button:disabled {
 
 header {
   position: fixed;
-  width: 90vw;
+  width: 95vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,14 +74,14 @@ nav ul {
 }
 
 .project-detail {
-  height: 90vh;
-  width: 90vw;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  bottom: 20px;
-  right: 20px;
-  background: #d3d4e2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #b5b1b1;
   mix-blend-mode: multiply;
   transition: 200ms ease-in-out;
   transform: scale(0);
@@ -90,7 +90,6 @@ nav ul {
 
 .project-detail.active {
   transform: scale(1);
-  background-color: white;
 }
 
 .mobile-menu.active {
@@ -546,6 +545,10 @@ form textarea {
     flex-direction: row;
   }
 
+  .project-flex {
+    flex-direction: column;
+  }
+
   .row-reverse {
     flex-direction: row-reverse;
   }
@@ -586,6 +589,41 @@ form textarea {
   .form {
     width: 450px;
   }
+
+  .project-detail {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #b5b1b1;
+  }
+
+  .project-detail-article {
+    height: 88vh;
+  }
+
+  .project-detail-work-description,
+  .project-detail-buttons {
+    display: flex;
+  }
+
+  .project-detail-work-description {
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 30px;
+  }
+
+  .project-detail-tech-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .project-detail-buttons li {
+    margin-right: 15px;
+  }
 }
 
 .fixed_postion {
@@ -610,6 +648,18 @@ form textarea {
 
 .see-source-img {
   padding-left: 15px;
+}
+
+.project-detail-article {
+  margin: 16px;
+}
+
+.project-detail-work-description {
+  font-size: 14px;
+}
+
+.project-detail-buttons li {
+  margin-right: 10px;
 }
 
 .project-detail-buttons {
