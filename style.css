@@ -99,7 +99,7 @@ nav ul {
 
 .mobile-menu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .mobile-menu ul {
@@ -107,8 +107,8 @@ nav ul {
   color: #fff;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 35px;
+  line-height: 53px;
 }
 
 .mobile-menu-list a {
@@ -604,7 +604,7 @@ form textarea {
 
 .see-source {
   display: flex;
-  width: 90%;
+  width: 135px;
   margin-right: 20px;
 }
 
@@ -614,4 +614,17 @@ form textarea {
 
 .project-detail-buttons {
   display: flex;
+}
+
+.project-detail-buttons a {
+  text-decoration: none;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-btn {
+  border: none;
 }
