@@ -678,3 +678,8 @@ form textarea {
 .hamburger-btn {
   border: none;
 }
+
+form small {
+  color: red;
+  font-size: 15px;
+}
