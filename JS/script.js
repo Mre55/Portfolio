@@ -174,7 +174,7 @@ function validateEmail(input, invalidMsg) {
 }
 
 const form = document.querySelector('#myForm');
-const EMAIL_INVALID = 'Please enter a correct email address format and uppercase is not allowed!!';
+const EMAIL_INVALID = 'Please enter a correct email address format. Uppercase not allowed in this field!!';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
