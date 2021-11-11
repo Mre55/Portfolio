@@ -197,9 +197,9 @@ function handleChange() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const formValue = localStorage.getItem('form');
-  if (formValue) {
-    const formObject = JSON.parse(formValue);
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
     fullNameForm.value = formObject.fullName;
     emailForm.value = formObject.email;
     commentForm.value = formObject.comment;
