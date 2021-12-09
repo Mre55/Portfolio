@@ -230,9 +230,7 @@ nav ul li {
   margin-bottom: 90px;
 }
 
-.work-img img {
-  width: 100%;
-  height: 220px;
+.work-img {
   border-radius: 8px;
 }
 
@@ -515,30 +513,51 @@ form textarea {
   }
 
   #work-section {
-    padding: 50px 80px;
+    padding: 50px 150px;
   }
 
   .work-container {
-    flex: 1;
+    height: 400px;
     margin: 50px;
   }
 
   .work-img {
-    flex: 0.5;
+    background-repeat: no-repeat;
+    width: 50%;
     display: flex;
+    border-radius: 8px;
     transition: transform 1s;
   }
 
+  .img-one {
+    background: url("./Images/work-one-img.jpg");
+    background-size: cover;
+  }
+
+  .img-two {
+    background: url("./Images/work-two-img.jpg");
+    background-size: cover;
+  }
+
+  .img-three {
+    background: url("./Images/work-three-img.jpg");
+    background-size: cover;
+  }
+
+  .img-four {
+    background: url("./Images/work-four-img.jpg");
+    background-size: cover;
+  }
+
   .work-img:hover {
-    transform: scale(1.07);
+    transform: scale(1.04);
   }
 
   .work-description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 0.5;
-    padding-left: 15px;
+    width: 50%;
+    padding: 20px;
   }
 
   .flex {
@@ -551,10 +570,6 @@ form textarea {
 
   .row-reverse {
     flex-direction: row-reverse;
-  }
-
-  .work-img img {
-    object-fit: cover;
   }
 
   .about-section-text {
