@@ -530,22 +530,22 @@ form textarea {
   }
 
   .img-one {
-    background: url("./Images/work-one-img.jpg");
+    background: url("./Images/work-img-one.png");
     background-size: cover;
   }
 
   .img-two {
-    background: url("./Images/work-two-img.jpg");
+    background: url("./Images/work-img-two.png");
     background-size: cover;
   }
 
   .img-three {
-    background: url("./Images/work-three-img.jpg");
+    background: url("./Images/work-img-three.png");
     background-size: cover;
   }
 
   .img-four {
-    background: url("./Images/work-four-img.jpg");
+    background: url("./Images/work-img-four.jpeg");
     background-size: cover;
   }
 
