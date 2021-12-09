@@ -67,7 +67,6 @@ nav ul {
   bottom: 0;
   right: 0;
   background: #1d2fd5;
-  mix-blend-mode: multiply;
   transition: 200ms ease-in-out;
   transform: scale(0);
   z-index: 10;
@@ -81,8 +80,7 @@ nav ul {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #b5b1b1;
-  mix-blend-mode: multiply;
+  background: #e5e5e5;
   transition: 200ms ease-in-out;
   transform: scale(0);
   z-index: 10;
@@ -555,7 +553,7 @@ form textarea {
   }
 
   .work-container {
-    height: 400px;
+    height: auto;
     margin: 50px;
   }
 
@@ -644,17 +642,30 @@ form textarea {
   }
 
   .project-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: #b5b1b1;
+  }
+
+  .project-detail-background {
+    position: absolute;
+    background-color: #e5e5e5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
   }
 
   .project-detail-article {
-    height: 88vh;
+    height: 85vh;
+    width: 50vw;
   }
 
   .project-detail-work-description,

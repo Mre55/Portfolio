@@ -5,19 +5,19 @@ const menuContainer = document.querySelector('.mobile-menu-list');
 const humburgerButton = document.querySelector('.hamburger-btn');
 const showMobileMenu = document.querySelector('.mobile-menu');
 
-const projectDetails = document.querySelectorAll('.see-project-btn');
+const seeProjectDetail = document.querySelectorAll('.see-project-btn');
 const projectDetail = document.querySelector('.project-detail');
 
 const projects = [
   {
     id: '1',
-    name: 'Tonic',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    featured_image: './Images/work-one-img.jpg',
+    name: 'Portfolio',
+    description: "This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what I can bring to their teams.",
+    featured_image: '../Images/work-img-one.png',
     link_to_live: ['See live', './Images/detailProjectLive.png'],
     link_to_source: ['See source', './Images/detailProjectGit.png'],
     technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['CANOPY', 'Back End Dev', '2015'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '2',
@@ -84,10 +84,9 @@ menuContainer.addEventListener('click', () => {
   humburgerButton.classList.remove('hide');
 });
 
-projectDetails.forEach((button) => {
+seeProjectDetail.forEach((button) => {
   button.addEventListener('click', (e) => {
     const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
-    mainTag.classList.add('fixed_postion');
     projectDetail.classList.add('active');
     projectDetail.innerHTML = `
         <article class="work-container flex project-detail-article project-flex">
@@ -106,9 +105,7 @@ projectDetails.forEach((button) => {
                 <li>${selectedProject.name_detail[2]}</li>
               </ul>
             </div>
-          <div class="work-img">
-            <img src=${selectedProject.featured_image} alt="Picture for the project Tonic, showing a laptop and a widescreen." />
-          </div>
+          <div class="work-img img-one"></div>
           <div class="work-description-project project-detail-work-description">
             <p>
               ${selectedProject.description}
@@ -129,8 +126,10 @@ projectDetails.forEach((button) => {
             </div>
             </div>
           </div>
-        </article>`;
-    const projectDetailClose = document.querySelector('.close-button-project');
+        </article>
+        `;
+        // <div class="project-detail-background"></div>
+        const projectDetailClose = document.querySelector('.close-button-project');
     projectDetailClose.addEventListener('click', () => {
       mainTag.classList.remove('fixed_postion');
       projectDetail.classList.remove('active');
