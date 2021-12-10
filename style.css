@@ -72,6 +72,10 @@ nav ul {
   z-index: 10;
 }
 
+.project-detail-article {
+  margin: 80px 30px;
+}
+
 .project-detail {
   height: 100vh;
   width: 100vw;
@@ -83,6 +87,17 @@ nav ul {
   transition: 200ms ease-in-out;
   transform: scale(0);
   z-index: 10;
+}
+
+.project-detail-background {
+  position: absolute;
+  background-color: #446089;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .project-detail.active {
@@ -497,6 +512,10 @@ form textarea {
     height: 330px;
     box-shadow: none;
   }
+
+  .project-detail-article {
+    margin: 70px 120px;
+  }
 }
 
 @media screen and (min-width: 995px) {
@@ -652,17 +671,6 @@ form textarea {
     right: 0;
   }
 
-  .project-detail-background {
-    position: absolute;
-    background-color: #446089;
-    opacity: 0.8;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-  }
-
   .project-detail-article {
     height: 85vh;
     width: 50vw;
@@ -712,10 +720,6 @@ form textarea {
 
 .see-source-img {
   padding-left: 15px;
-}
-
-.project-detail-article {
-  margin: 16px;
 }
 
 .project-detail-work-description {

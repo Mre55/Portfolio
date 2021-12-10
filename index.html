@@ -27,7 +27,7 @@
             />
           </button>
           <ul class="only-desktop menu-bar">
-            <li><a href="#headline-section">Portfolio</a></li>
+            <li><a href="#work-section">Portfolio</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#contact-form">Contact</a></li>
           </ul>
@@ -38,12 +38,14 @@
         <button data-close-button class="close-button">&times;</button>
       </div>
       <ul class="mobile-menu-list">
-        <li><a href="#headline-section">Portfolio</a></li>
+        <li><a href="#work-section">Portfolio</a></li>
         <li><a href="#about-section">About</a></li>
         <li><a href="#contact-form">Contact</a></li>
       </ul>
     </div>
-    
+    <div id="myList" class="project-detail">
+
+    </div>
     <main class="main">
       <section class="headline" id="headline-section">
         <h2>I’m Mihreteab <br> Glad to see you!</h2>
@@ -88,11 +90,38 @@
       </section>
 
       <section id="work-section">
-        <div id="myList" class="project-detail">
-          <div class="project-detail-background"></div>
-      
-        </div>
+        
         <article class="work-container flex">
+          <div class="work-img img-two"></div>
+          <div class="work-description">
+            <h3>Wara Bethel</h3>
+            <div class="client-des">
+              <ul class="client-name">
+                <li>ACE</li>
+              </ul>
+              <ul>
+                <li>Front-End Dev</li>
+              </ul>
+              <ul>
+                <li>2020</li>
+              </ul>
+            </div>
+            <p>
+              This is a website that invites the community
+              to attend the upcoming conference and provides 
+              information on previous conferences as well as 
+              the upcoming one.
+            </p>
+            <ul class="buttons">
+              <li><button>html</button></li>
+              <li><button>css</button></li>
+              <li><button>javaScript</button></li>
+            </ul>
+            <button id="1"  class="see-project-btn">See Project</button>
+          </div>
+        </article>
+
+        <article class="work-container flex row-reverse">
           <div class="work-img img-one"></div>
           <div class="work-description">
             <h3>Portfolio</h3>
@@ -119,37 +148,7 @@
               <li><button type="button">css</button></li>
               <li><button type="button">javaScript</button></li>
             </ul>
-            <button id="1" class="see-project-btn">See Project</button>
-          </div>
-        </article>
-
-        <article class="work-container flex row-reverse project-2">
-          <div class="work-img img-two"></div>
-          <div class="work-description">
-            <h3>Wara Bethel</h3>
-            <div class="client-des">
-              <ul class="client-name">
-                <li>ACE</li>
-              </ul>
-              <ul>
-                <li>Front-End Dev</li>
-              </ul>
-              <ul>
-                <li>2020</li>
-              </ul>
-            </div>
-            <p>
-              This is a website that invites the community
-              to attend the upcoming conference and provides 
-              information on previous conferences as well as 
-              the upcoming one.
-            </p>
-            <ul class="buttons">
-              <li><button>html</button></li>
-              <li><button>css</button></li>
-              <li><button>javaScript</button></li>
-            </ul>
-            <button id="2"  class="see-project-btn">See Project</button>
+            <button id="2" class="see-project-btn">See Project</button>
           </div>
         </article>
 

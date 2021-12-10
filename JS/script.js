@@ -3,7 +3,6 @@ const closeMobileMenu = document.querySelectorAll('[data-close-button]');
 const headline = document.querySelector('.headline');
 const mainTag = document.querySelector('.main');
 const header = document.querySelector('.header');
-const imgOne = document.querySelector('.img-one');
 const menuContainer = document.querySelector('.mobile-menu-list');
 const humburgerButton = document.querySelector('.hamburger-btn');
 const showMobileMenu = document.querySelector('.mobile-menu');
@@ -14,16 +13,6 @@ const projectDetail = document.querySelector('.project-detail');
 const projects = [
   {
     id: '1',
-    name: 'Portfolio',
-    description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
-    featured_image: './Images/work-img-one.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Portfolio/'],
-    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Portfolio'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
-  },
-  {
-    id: '2',
     name: 'Wara Bethel',
     description: "This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.",
     featured_image: './Images/work-img-two.png',
@@ -31,6 +20,16 @@ const projects = [
     link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Wara-Conference'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['ACE', 'Front-End Dev', '2020'],
+  },
+  {
+    id: '2',
+    name: 'Portfolio',
+    description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
+    featured_image: './Images/work-img-one.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Portfolio/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Portfolio'],
+    technologies: ['html', 'css', 'javaScript'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '3',
@@ -91,7 +90,7 @@ seeProjectDetail.forEach((button) => {
   button.addEventListener('click', (e) => {
     const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
     projectDetail.classList.add('active');
-    headline.classList.add('fixed_postion');
+    mainTag.classList.add('fixed_postion');
     header.classList.add('fixed_postion');
 
     projectDetail.innerHTML = `
@@ -139,7 +138,7 @@ seeProjectDetail.forEach((button) => {
 
     const projectDetailClose = document.querySelector('.close-button-project');
     projectDetailClose.addEventListener('click', () => {
-      headline.classList.remove('fixed_postion');
+      mainTag.classList.remove('fixed_postion');
       header.classList.remove('fixed_postion');
       projectDetail.classList.remove('active');
     });
