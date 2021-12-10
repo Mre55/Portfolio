@@ -1,6 +1,9 @@
 const openMobileMenu = document.querySelectorAll('[data-mobile-menu-target]');
 const closeMobileMenu = document.querySelectorAll('[data-close-button]');
+const headline = document.querySelector('.headline');
 const mainTag = document.querySelector('.main');
+const header = document.querySelector('.header');
+const imgOne = document.querySelector('.img-one');
 const menuContainer = document.querySelector('.mobile-menu-list');
 const humburgerButton = document.querySelector('.hamburger-btn');
 const showMobileMenu = document.querySelector('.mobile-menu');
@@ -12,42 +15,42 @@ const projects = [
   {
     id: '1',
     name: 'Portfolio',
-    description: "This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what I can bring to their teams.",
-    featured_image: '../Images/work-img-one.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png'],
-    link_to_source: ['See source', './Images/detailProjectGit.png'],
+    description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
+    featured_image: './Images/work-img-one.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Portfolio/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Portfolio'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '2',
-    name: 'Multi-Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    featured_image: './Images/work-two-img.jpg',
-    link_to_live: ['See live', './Images/detailProjectLive.png'],
-    link_to_source: ['See source', './Images/detailProjectGit.png'],
+    name: 'Wara Bethel',
+    description: "This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.",
+    featured_image: './Images/work-img-two.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Wara-Conference/index.html'],
+    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Wara-Conference'],
     technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['CANOPY', 'Back End Dev', '2015'],
+    name_detail: ['ACE', 'Front-End Dev', '2020'],
   },
   {
     id: '3',
-    name: 'Tonic',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    featured_image: './Images/work-three-img.jpg',
-    link_to_live: ['See live', './Images/detailProjectLive.png'],
-    link_to_source: ['See source', './Images/detailProjectGit.png'],
+    name: 'Awesome Books',
+    description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
+    featured_image: './Images/work-img-three.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Awesome-book/#book-list'],
+    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Awesome-book'],
     technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['CANOPY', 'Back End Dev', '2015'],
+    name_detail: ['Kuter 3', 'Front-End Dev', '2021'],
   },
   {
     id: '4',
-    name: 'Multi-Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    featured_image: './Images/work-four-img.jpg',
-    link_to_live: ['See live', './Images/detailProjectLive.png'],
-    link_to_source: ['See source', './Images/detailProjectGit.png'],
+    name: 'To Do App',
+    description: "This project is about a basic website that allows users to add/remove books from a list. And also the content dynamically modifies the DOM and adds basic events.",
+    featured_image: './Images/work-img-four.jpeg',
+    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/To-Do-App/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/To-Do-App'],
     technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['CANOPY', 'Back End Dev', '2015'],
+    name_detail: ['Microverse', 'Front-End Dev', '2021'],
   },
 ];
 
@@ -88,7 +91,11 @@ seeProjectDetail.forEach((button) => {
   button.addEventListener('click', (e) => {
     const selectedProject = projects.filter((project) => project.id === e.target.id)[0];
     projectDetail.classList.add('active');
+    headline.classList.add('fixed_postion');
+    header.classList.add('fixed_postion');
+
     projectDetail.innerHTML = `
+        <div class="project-detail-background"></div>
         <article class="work-container flex project-detail-article project-flex">
             <div class="project-detail-header">
               <h3>${selectedProject.name}</h3>
@@ -105,7 +112,8 @@ seeProjectDetail.forEach((button) => {
                 <li>${selectedProject.name_detail[2]}</li>
               </ul>
             </div>
-          <div class="work-img img-one"></div>
+          <div class="work-img" style="background: url(${selectedProject.featured_image});
+          background-size: cover; width: auto"></div>
           <div class="work-description-project project-detail-work-description">
             <p>
               ${selectedProject.description}
@@ -117,10 +125,10 @@ seeProjectDetail.forEach((button) => {
               <li><button type="button">${selectedProject.technologies[2]}</button></li>
             </ul>
             <div class="project-detail-buttons">
-                <a href="https://mre55.github.io/Portfolio/"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
+                <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
                   <img class="see-source-img" src=${selectedProject.link_to_live[1]} alt="" /></button>
                 </a>
-                <a href="https://github.com/Mre55/Portfolio"><button class="see-project-btn see-source">${selectedProject.link_to_source[0]}
+                <a href="${selectedProject.link_to_source[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_source[0]}
                   <img class="see-source-img" src=${selectedProject.link_to_source[1]} alt="" /></button>
                 </a>
             </div>
@@ -128,10 +136,11 @@ seeProjectDetail.forEach((button) => {
           </div>
         </article>
         `;
-        // <div class="project-detail-background"></div>
-        const projectDetailClose = document.querySelector('.close-button-project');
+
+    const projectDetailClose = document.querySelector('.close-button-project');
     projectDetailClose.addEventListener('click', () => {
-      mainTag.classList.remove('fixed_postion');
+      headline.classList.remove('fixed_postion');
+      header.classList.remove('fixed_postion');
       projectDetail.classList.remove('active');
     });
   });

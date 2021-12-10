@@ -80,7 +80,6 @@ nav ul {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #e5e5e5;
   transition: 200ms ease-in-out;
   transform: scale(0);
   z-index: 10;
@@ -549,7 +548,7 @@ form textarea {
   }
 
   #work-section {
-    padding: 50px 120px;
+    padding: 50px 180px;
   }
 
   .work-container {
@@ -655,7 +654,8 @@ form textarea {
 
   .project-detail-background {
     position: absolute;
-    background-color: #e5e5e5;
+    background-color: #446089;
+    opacity: 0.8;
     top: 0;
     bottom: 0;
     right: 0;
