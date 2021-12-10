@@ -17,7 +17,7 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="header">
         <a href="#headline-section" class="header-logo">Home</a>
         <nav>
           <button class="only-mobile hamburger-btn" data-mobile-menu-target="#mobile-menu">
@@ -27,25 +27,25 @@
             />
           </button>
           <ul class="only-desktop menu-bar">
-            <li><a href="#headline-section">Portfolio</a></li>
+            <li><a href="#work-section">Portfolio</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#contact-form">Contact</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <ul class="mobile-menu-list">
-          <li><a href="#headline-section">Portfolio</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#contact-form">Contact</a></li>
-        </ul>
+    </header>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-header">
+        <button data-close-button class="close-button">&times;</button>
       </div>
-      <div id="myList" class="project-detail">
-        
-      </div>
+      <ul class="mobile-menu-list">
+        <li><a href="#work-section">Portfolio</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </div>
+    <div id="myList" class="project-detail">
+
+    </div>
     <main class="main">
       <section class="headline" id="headline-section">
         <h2>I’m Mihreteab <br> Glad to see you!</h2>
@@ -90,86 +90,87 @@
       </section>
 
       <section id="work-section">
+        
         <article class="work-container flex">
-          <div class="work-img">
-            <img src="./Images/work-one-img.jpg" alt="Picture for the project Tonic, showing a laptop and a widescreen." />
-          </div>
+          <div class="work-img img-two"></div>
           <div class="work-description">
-            <h3>Tonic</h3>
+            <h3>Wara Bethel</h3>
             <div class="client-des">
               <ul class="client-name">
-                <li>CANOPY</li>
+                <li>ACE</li>
               </ul>
               <ul>
-                <li>Back End Dev</li>
+                <li>Front-End Dev</li>
               </ul>
               <ul>
-                <li>2015</li>
+                <li>2020</li>
               </ul>
             </div>
             <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="buttons">
-              <li><button type="button">html</button></li>
-              <li><button type="button">css</button></li>
-              <li><button type="button">javaScript</button></li>
-            </ul>
-            <button id="1" class="see-project-btn">See Project</button>
-          </div>
-        </article>
-
-        <article class="work-container flex row-reverse project-2">
-          <div class="work-img">
-            <img src="./Images/work-two-img.jpg" alt="Picture for the project Multi-Post Stories, showing a laptop." />
-          </div>
-          <div class="work-description">
-            <h3>Multi-Post Stories</h3>
-            <div class="client-des">
-              <ul class="client-name">
-                <li>CANOPY</li>
-              </ul>
-              <ul>
-                <li>Back End Dev</li>
-              </ul>
-              <ul>
-                <li>2015</li>
-              </ul>
-            </div>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              This is a website that invites the community
+              to attend the upcoming conference and provides 
+              information on previous conferences as well as 
+              the upcoming one.
             </p>
             <ul class="buttons">
               <li><button>html</button></li>
               <li><button>css</button></li>
               <li><button>javaScript</button></li>
             </ul>
-            <button id="2"  class="see-project-btn">See Project</button>
+            <button id="1"  class="see-project-btn">See Project</button>
+          </div>
+        </article>
+
+        <article class="work-container flex row-reverse">
+          <div class="work-img img-one"></div>
+          <div class="work-description">
+            <h3>Portfolio</h3>
+            <div class="client-des">
+              <ul class="client-name">
+                <li>Mihreteab M.</li>
+              </ul>
+              <ul>
+                <li>Front-End Dev</li>
+              </ul>
+              <ul>
+                <li>2021</li>
+              </ul>
+            </div>
+            <p>
+              This project is about one of the most powerful tools in your software developer 
+              toolbox; it’s the easiest way of showing what I truly 
+              capable of as a developer, and is a quick and simple way for 
+              recruiters and hiring managers to get an idea of what I can 
+              bring to their teams.
+            </p>
+            <ul class="buttons">
+              <li><button type="button">html</button></li>
+              <li><button type="button">css</button></li>
+              <li><button type="button">javaScript</button></li>
+            </ul>
+            <button id="2" class="see-project-btn">See Project</button>
           </div>
         </article>
 
         <article class="work-container flex">
-          <div class="work-img">
-            <img src="./Images/work-three-img.jpg" alt="Picture for the project Tonic, showing a laptop." />
-          </div>
+          <div class="work-img img-three"></div>
           <div class="work-description">
-            <h3>Tonic</h3>
+            <h3>Awesome Books</h3>
             <div class="client-des">
               <ul class="client-name">
-                <li>CANOPY</li>
+                <li>Kuter 3</li>
               </ul>
               <ul>
-                <li>Back End Dev</li>
+                <li>Front-End Dev</li>
               </ul>
               <ul>
-                <li>2015</li>
+                <li>2021</li>
               </ul>
             </div>
             <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              "Awesome books" is a simple website that displays
+              a list of books and allows you to add and remove
+              books from that list.
             </p>
             <ul class="buttons">
               <li><button>html</button></li>
@@ -181,25 +182,24 @@
         </article>
 
         <article class="work-container flex row-reverse">
-          <div class="work-img">
-            <img src="./Images/work-four-img.jpg" alt="Picture for the project Multi-Post Stories, showing a laptop." />
-          </div>
+          <div class="work-img img-four"></div>
           <div class="work-description">
-            <h3>Multi-Post Stories</h3>
+            <h3>To Do App</h3>
             <div class="client-des">
               <ul class="client-name">
-                <li>CANOPY</li>
+                <li>Microverse</li>
               </ul>
               <ul>
-                <li>Back End Dev</li>
+                <li>Front-End Dev</li>
               </ul>
               <ul>
-                <li>2015</li>
+                <li>2021</li>
               </ul>
             </div>
             <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              This project is about a basic website that 
+              allows users to add/remove books from a list. 
+              And also the content dynamically modifies the DOM and adds basic events.
             </p>
             <ul class="buttons">
               <li><button disabled>html</button></li>
