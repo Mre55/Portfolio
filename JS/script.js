@@ -1,6 +1,5 @@
 const openMobileMenu = document.querySelectorAll('[data-mobile-menu-target]');
 const closeMobileMenu = document.querySelectorAll('[data-close-button]');
-const headline = document.querySelector('.headline');
 const mainTag = document.querySelector('.main');
 const header = document.querySelector('.header');
 const menuContainer = document.querySelector('.mobile-menu-list');
@@ -14,10 +13,10 @@ const projects = [
   {
     id: '1',
     name: 'Wara Bethel',
-    description: "This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.",
+    description: 'This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.',
     featured_image: './Images/work-img-two.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Wara-Conference/index.html'],
-    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Wara-Conference'],
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Wara-Conference/index.html'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Wara-Conference'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['ACE', 'Front-End Dev', '2020'],
   },
@@ -26,8 +25,8 @@ const projects = [
     name: 'Portfolio',
     description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
     featured_image: './Images/work-img-one.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Portfolio/'],
-    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Portfolio'],
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Portfolio/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Portfolio'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
@@ -36,18 +35,18 @@ const projects = [
     name: 'Awesome Books',
     description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
     featured_image: './Images/work-img-three.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/Awesome-book/#book-list'],
-    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/Awesome-book'],
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Awesome-book/#book-list'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Awesome-book'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['Kuter 3', 'Front-End Dev', '2021'],
   },
   {
     id: '4',
     name: 'To Do App',
-    description: "This project is about a basic website that allows users to add/remove books from a list. And also the content dynamically modifies the DOM and adds basic events.",
+    description: 'This project is about a basic website that allows users to add/remove books from a list. And also the content dynamically modifies the DOM and adds basic events.',
     featured_image: './Images/work-img-four.jpeg',
-    link_to_live: ['See live', './Images/detailProjectLive.png','https://mre55.github.io/To-Do-App/'],
-    link_to_source: ['See source', './Images/detailProjectGit.png','https://github.com/Mre55/To-Do-App'],
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/To-Do-App/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/To-Do-App'],
     technologies: ['html', 'css', 'javaScript'],
     name_detail: ['Microverse', 'Front-End Dev', '2021'],
   },
