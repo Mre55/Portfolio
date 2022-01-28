@@ -22,12 +22,12 @@ const projects = [
   },
   {
     id: '2',
-    name: 'Portfolio',
-    description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
-    featured_image: './Images/work-img-one.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Portfolio/'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Portfolio'],
-    technologies: ['html', 'css', 'javaScript'],
+    name: 'Bookstore CMS',
+    description: 'The "Bookstore CMS" website displays a list of books via Bookstore API and allows users to add and remove books from the UI. Bookstore API, React, and Redux were used to build the website.',
+    featured_image: 'https://user-images.githubusercontent.com/34578631/150406323-95869d53-2b47-49b6-aceb-d4e0535c78da.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/bookstore/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/bookstore'],
+    technologies: ['React', 'Redux', 'React-Router', 'Bookstore API', 'Webpack'],
     name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
