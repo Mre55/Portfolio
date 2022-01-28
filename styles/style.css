@@ -167,7 +167,7 @@ nav ul {
 }
 
 #headline-section {
-  background: url("./Images/header-shapes-mobile@2x.svg");
+  background: url("../Images/header-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 25px;
@@ -253,22 +253,22 @@ nav ul li {
 }
 
 .img-one {
-  background: url("./Images/work-img-one.png");
+  background: url("../Images/work-img-one.png");
   background-size: cover;
 }
 
 .img-two {
-  background: url("./Images/work-img-two.png");
+  background: url("../Images/work-img-two.png");
   background-size: cover;
 }
 
 .img-three {
-  background: url("./Images/work-img-three.png");
+  background: url("../Images/work-img-three.png");
   background-size: cover;
 }
 
 .img-four {
-  background: url("./Images/work-img-four.jpeg");
+  background: url("../Images/work-img-four.jpeg");
   background-size: cover;
 }
 
@@ -412,7 +412,7 @@ nav ul li {
 #contact-form {
   display: flex;
   flex-direction: column;
-  background: url("./Images/contact-form-shapes-mobile.svg");
+  background: url("../Images/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5161f1;
@@ -527,7 +527,7 @@ form textarea {
   }
 
   #headline-section {
-    background: url("./Images/Header-bg@2x.svg");
+    background: url("../Images/Header-bg@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 70vh;
@@ -538,7 +538,7 @@ form textarea {
   }
 
   #contact-form {
-    background: url("./Images/contact-form-desktop-bg-shapes@2x.svg");
+    background: url("../Images/contact-form-desktop-bg-shapes@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #5161f1;
@@ -584,22 +584,22 @@ form textarea {
   }
 
   .img-one {
-    background: url("./Images/work-img-one.png");
+    background: url("../Images/work-img-one.png");
     background-size: cover;
   }
 
   .img-two {
-    background: url("./Images/work-img-two.png");
+    background: url("../Images/work-img-two.png");
     background-size: cover;
   }
 
   .img-three {
-    background: url("./Images/work-img-three.png");
+    background: url("../Images/work-img-three.png");
     background-size: cover;
   }
 
   .img-four {
-    background: url("./Images/work-img-four.jpeg");
+    background: url("../Images/work-img-four.jpeg");
     background-size: cover;
   }
 
