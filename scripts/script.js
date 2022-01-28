@@ -12,13 +12,13 @@ const projectDetail = document.querySelector('.project-detail');
 const projects = [
   {
     id: '1',
-    name: 'Wara Bethel',
-    description: 'This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.',
-    featured_image: './Images/work-img-two.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Wara-Conference/index.html'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Wara-Conference'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['ACE', 'Front-End Dev', '2020'],
+    name: 'Space Traveler\'s HUB',
+    description: 'Welcome to Space Traveler\'s HUB, this web app allows the user to take a fictional tour across the space. The user can choose a rocket from our catalog interface, and reserve it. Also, the user can see recent special missions and join them. Finally, the user will be able to keep track of all your rockets and mission they are subscribed to.',
+    featured_image: './Images/space-travelers-hub-preview.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://react-space-travelers-hub.herokuapp.com/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/space-travelers-hub'],
+    technologies: ['React', 'Redux', 'React-Router', 'TailwindCSS', 'Webpack'],
+    name_detail: ['Mihreteab M. & William Morales', 'Front-End Dev', '2022'],
   },
   {
     id: '2',
@@ -121,6 +121,8 @@ seeProjectDetail.forEach((button) => {
               <li><button type="button">${selectedProject.technologies[0]}</button></li>
               <li><button type="button">${selectedProject.technologies[1]}</button></li>
               <li><button type="button">${selectedProject.technologies[2]}</button></li>
+              <li><button type="button">${selectedProject.technologies[3]}</button></li>
+              <li><button type="button">${selectedProject.technologies[4]}</button></li>
             </ul>
             <div class="project-detail-buttons">
                 <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
