@@ -39,6 +39,7 @@ header {
   align-items: center;
   padding: 30px 24px;
   background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%), 0 2px 15px 0 rgb(0 0 0 / 15%);
 }
 
 .header-logo {
@@ -167,7 +168,7 @@ nav ul {
 }
 
 #headline-section {
-  background: url("./Images/header-shapes-mobile@2x.svg");
+  background: url("../Images/header-shapes-mobile@2x.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 25px;
@@ -253,22 +254,22 @@ nav ul li {
 }
 
 .img-one {
-  background: url("./Images/work-img-one.png");
+  background: url("../Images/space-travelers-hub-preview.png");
   background-size: cover;
 }
 
 .img-two {
-  background: url("./Images/work-img-two.png");
+  background: url("https://user-images.githubusercontent.com/34578631/150406323-95869d53-2b47-49b6-aceb-d4e0535c78da.png");
   background-size: cover;
 }
 
 .img-three {
-  background: url("./Images/work-img-three.png");
+  background: url("https://user-images.githubusercontent.com/34578631/148931488-5eab3eda-20c9-4937-ab6a-35a2deb24b44.png");
   background-size: cover;
 }
 
 .img-four {
-  background: url("./Images/work-img-four.jpeg");
+  background: url("../Images/work-img-four.jpeg");
   background-size: cover;
 }
 
@@ -412,7 +413,7 @@ nav ul li {
 #contact-form {
   display: flex;
   flex-direction: column;
-  background: url("./Images/contact-form-shapes-mobile.svg");
+  background: url("../Images/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5161f1;
@@ -527,7 +528,7 @@ form textarea {
   }
 
   #headline-section {
-    background: url("./Images/Header-bg@2x.svg");
+    background: url("../Images/Header-bg@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 70vh;
@@ -538,7 +539,7 @@ form textarea {
   }
 
   #contact-form {
-    background: url("./Images/contact-form-desktop-bg-shapes@2x.svg");
+    background: url("../Images/contact-form-desktop-bg-shapes@2x.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #5161f1;
@@ -584,22 +585,22 @@ form textarea {
   }
 
   .img-one {
-    background: url("./Images/work-img-one.png");
+    background: url("../Images/space-travelers-hub-preview.png");
     background-size: cover;
   }
 
   .img-two {
-    background: url("./Images/work-img-two.png");
+    background: url("https://user-images.githubusercontent.com/34578631/150406323-95869d53-2b47-49b6-aceb-d4e0535c78da.png");
     background-size: cover;
   }
 
   .img-three {
-    background: url("./Images/work-img-three.png");
+    background: url("https://user-images.githubusercontent.com/34578631/148931488-5eab3eda-20c9-4937-ab6a-35a2deb24b44.png");
     background-size: cover;
   }
 
   .img-four {
-    background: url("./Images/work-img-four.jpeg");
+    background: url("../Images/work-img-four.jpeg");
     background-size: cover;
   }
 

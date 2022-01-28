@@ -12,33 +12,33 @@ const projectDetail = document.querySelector('.project-detail');
 const projects = [
   {
     id: '1',
-    name: 'Wara Bethel',
-    description: 'This is a website that invites the community to attend the upcoming conference and provides information on previous conferences as well as the upcoming one.',
-    featured_image: './Images/work-img-two.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Wara-Conference/index.html'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Wara-Conference'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['ACE', 'Front-End Dev', '2020'],
+    name: 'Space Traveler\'s HUB',
+    description: 'Welcome to Space Traveler\'s HUB, this web app allows the user to take a fictional tour across the space. The user can choose a rocket from our catalog interface, and reserve it. Also, the user can see recent special missions and join them. Finally, the user will be able to keep track of all your rockets and mission they are subscribed to.',
+    featured_image: './Images/space-travelers-hub-preview.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://react-space-travelers-hub.herokuapp.com/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/space-travelers-hub'],
+    technologies: ['React', 'Redux', 'React-Router', 'TailwindCSS', 'Webpack'],
+    name_detail: ['Mihreteab M. & William Morales', 'Front-End Dev', '2022'],
   },
   {
     id: '2',
-    name: 'Portfolio',
-    description: 'This project is about one of the most powerful tools in your software developer toolbox; it’s the easiest way of showing what I truly capable of as a developer.',
-    featured_image: './Images/work-img-one.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Portfolio/'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Portfolio'],
-    technologies: ['html', 'css', 'javaScript'],
+    name: 'Bookstore CMS',
+    description: 'The "Bookstore CMS" website displays a list of books via Bookstore API and allows users to add and remove books from the UI. Bookstore API, React, and Redux were used to build the website.',
+    featured_image: 'https://user-images.githubusercontent.com/34578631/150406323-95869d53-2b47-49b6-aceb-d4e0535c78da.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/bookstore/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/bookstore'],
+    technologies: ['React', 'Redux', 'React-Router', 'Bookstore API', 'Webpack'],
     name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '3',
-    name: 'Awesome Books',
-    description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
-    featured_image: './Images/work-img-three.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Awesome-book/#book-list'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Awesome-book'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['Kuter 3', 'Front-End Dev', '2021'],
+    name: 'Math Magicians',
+    description: 'This project is about Math magicians Calculator App, that allows users to make simple calculations and read a random math-related quote. Build with React.',
+    featured_image: 'https://user-images.githubusercontent.com/34578631/148931488-5eab3eda-20c9-4937-ab6a-35a2deb24b44.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://react-math-magicians-heroku.herokuapp.com/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/math-magicians'],
+    technologies: ['React', 'CSS', 'Webpack', 'Heroku', 'Git'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '4',
@@ -47,8 +47,8 @@ const projects = [
     featured_image: './Images/work-img-four.jpeg',
     link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/To-Do-App/'],
     link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/To-Do-App'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['Microverse', 'Front-End Dev', '2021'],
+    technologies: ['html', 'css', 'javaScript', 'Git', 'Webpack'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
 ];
 
@@ -121,6 +121,8 @@ seeProjectDetail.forEach((button) => {
               <li><button type="button">${selectedProject.technologies[0]}</button></li>
               <li><button type="button">${selectedProject.technologies[1]}</button></li>
               <li><button type="button">${selectedProject.technologies[2]}</button></li>
+              <li><button type="button">${selectedProject.technologies[3]}</button></li>
+              <li><button type="button">${selectedProject.technologies[4]}</button></li>
             </ul>
             <div class="project-detail-buttons">
                 <a href="${selectedProject.link_to_live[2]}"><button class="see-project-btn see-source">${selectedProject.link_to_live[0]}
