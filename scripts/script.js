@@ -32,13 +32,13 @@ const projects = [
   },
   {
     id: '3',
-    name: 'Awesome Books',
-    description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
-    featured_image: './Images/work-img-three.png',
-    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/Awesome-book/#book-list'],
-    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/Awesome-book'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['Kuter 3', 'Front-End Dev', '2021'],
+    name: 'Math Magicians',
+    description: 'This project is about Math magicians Calculator App, that allows users to make simple calculations and read a random math-related quote. Build with React.',
+    featured_image: 'https://user-images.githubusercontent.com/34578631/148931488-5eab3eda-20c9-4937-ab6a-35a2deb24b44.png',
+    link_to_live: ['See live', './Images/detailProjectLive.png', 'https://react-math-magicians-heroku.herokuapp.com/'],
+    link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/math-magicians'],
+    technologies: ['React', 'CSS', 'Webpack', 'Heroku', 'Git'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
   {
     id: '4',
@@ -47,8 +47,8 @@ const projects = [
     featured_image: './Images/work-img-four.jpeg',
     link_to_live: ['See live', './Images/detailProjectLive.png', 'https://mre55.github.io/To-Do-App/'],
     link_to_source: ['See source', './Images/detailProjectGit.png', 'https://github.com/Mre55/To-Do-App'],
-    technologies: ['html', 'css', 'javaScript'],
-    name_detail: ['Microverse', 'Front-End Dev', '2021'],
+    technologies: ['html', 'css', 'javaScript', 'Git', 'Webpack'],
+    name_detail: ['Mihreteab M.', 'Front-End Dev', '2021'],
   },
 ];
 
