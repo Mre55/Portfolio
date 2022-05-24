@@ -4,35 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://user-images.githubusercontent.com/34578631/140739313-052e9749-ed54-4868-8686-f53108b68b56.png#keepProtocol">
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/34578631/140739313-052e9749-ed54-4868-8686-f53108b68b56.png#keepProtocol"
+    />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JVDE86BVC"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7JVDE86BVC"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-7JVDE86BVC');
+      gtag("config", "G-7JVDE86BVC");
     </script>
   </head>
   <body>
     <header class="header">
-        <a href="#headline-section" class="header-logo">Home</a>
-        <nav>
-          <button class="only-mobile hamburger-btn" data-mobile-menu-target="#mobile-menu">
-            <img
-              src="./Images/Union.svg"
-              alt="Hamburger Navbar Icon"
-            />
-          </button>
-          <ul class="only-desktop menu-bar">
-            <li><a href="#work-section">Portfolio</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#contact-form">Contact</a></li>
-          </ul>
-        </nav>
+      <a href="#headline-section" class="header-logo">Home</a>
+      <nav>
+        <button
+          class="only-mobile hamburger-btn"
+          data-mobile-menu-target="#mobile-menu"
+        >
+          <img src="./Images/Union.svg" alt="Hamburger Navbar Icon" />
+        </button>
+        <ul class="only-desktop menu-bar">
+          <li><a href="#work-section">Portfolio</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-header">
@@ -44,12 +52,13 @@
         <li><a href="#contact-form">Contact</a></li>
       </ul>
     </div>
-    <div id="myList" class="project-detail">
-
-    </div>
+    <div id="myList" class="project-detail"></div>
     <main class="main">
       <section class="headline" id="headline-section">
-        <h2>I’m Mihreteab <br> Glad to see you!</h2>
+        <h2>
+          I’m Mihreteab <br />
+          Glad to see you!
+        </h2>
 
         <div class="headline-text">
           <p>
@@ -70,13 +79,14 @@
               /></a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/mihreteab-aride-86249812b/"
+              <a href="https://www.linkedin.com/in/mihreteab-aride-86249812b/"
                 ><img src="./Images/Linkedin.svg" alt="Linkedin icon"
               /></a>
             </li>
             <li>
-              <a href=""><img src="./Images/Medium.svg" alt="Medium icon" /></a>
+              <a href="https://medium.com/@mihreteabmisganaw84"
+                ><img src="./Images/Medium.svg" alt="Medium icon"
+              /></a>
             </li>
             <li>
               <a href="https://github.com/Mre55"
@@ -84,14 +94,15 @@
               /></a>
             </li>
             <li>
-              <a href=""><img src="./Images/Angle.svg" alt="AngelList icon" /></a>
+              <a href="https://angel.co/u/mre55"
+                ><img src="./Images/Angle.svg" alt="AngelList icon"
+              /></a>
             </li>
           </ul>
         </div>
       </section>
 
       <section id="work-section">
-        
         <article class="work-container flex">
           <div class="work-img img-one"></div>
           <div class="work-description">
@@ -108,12 +119,12 @@
               </ul>
             </div>
             <p>
-              Welcome to Space Traveler's HUB, this web app allows the user to 
-              take a fictional tour across the space. The user can choose a rocket 
-              from our catalog interface, and reserve it. Also, the user can see 
-              recent special missions and join them. Finally, the user will be 
-              able to keep track of all your rockets and mission they are 
-              subscribed to.
+              Welcome to Space Traveler's HUB, this web app allows the user to
+              take a fictional tour across the space. The user can choose a
+              rocket from our catalog interface, and reserve it. Also, the user
+              can see recent special missions and join them. Finally, the user
+              will be able to keep track of all your rockets and mission they
+              are subscribed to.
             </p>
             <ul class="buttons">
               <li><button>React</button></li>
@@ -122,7 +133,7 @@
               <li><button>TailwindCSS</button></li>
               <li><button>Webpack</button></li>
             </ul>
-            <button id="1"  class="see-project-btn">See Project</button>
+            <button id="1" class="see-project-btn">See Project</button>
           </div>
         </article>
 
@@ -142,9 +153,9 @@
               </ul>
             </div>
             <p>
-              The "Bookstore CMS" website displays a list of books via Bookstore API and allows users 
-              to add and remove books from the UI. Bookstore API, React, and Redux were used to build 
-              the website.
+              The "Bookstore CMS" website displays a list of books via Bookstore
+              API and allows users to add and remove books from the UI.
+              Bookstore API, React, and Redux were used to build the website.
             </p>
             <ul class="buttons">
               <li><button type="button">React</button></li>
@@ -173,16 +184,18 @@
               </ul>
             </div>
             <p>
-              This project is about Math magicians Calculator App, 
-              that allows users to make simple calculations and read a 
-              random math-related quote. Build with React.
+              This project is about Math magicians Calculator App, that allows
+              users to make simple calculations and read a random math-related
+              quote. Build with React.
             </p>
             <ul class="buttons">
               <li><button>React</button></li>
               <li><button>CSS</button></li>
               <li><button>Webpack</button></li>
             </ul>
-            <button  id="3" type="button" class="see-project-btn">See Project</button>
+            <button id="3" type="button" class="see-project-btn">
+              See Project
+            </button>
           </div>
         </article>
 
@@ -202,16 +215,16 @@
               </ul>
             </div>
             <p>
-              This project is about a basic website that 
-              allows users to add/remove books from a list. 
-              And also the content dynamically modifies the DOM and adds basic events.
+              This project is about a basic website that allows users to
+              add/remove books from a list. And also the content dynamically
+              modifies the DOM and adds basic events.
             </p>
             <ul class="buttons">
               <li><button disabled>html</button></li>
               <li><button disabled>css</button></li>
               <li><button disabled>javaScript</button></li>
             </ul>
-            <button id="4"  class="see-project-btn">See Project</button>
+            <button id="4" class="see-project-btn">See Project</button>
           </div>
         </article>
       </section>
@@ -219,18 +232,18 @@
       <section id="about-section" class="flex">
         <div class="about-section-text">
           <h2>About Myself</h2>
-  
+
           <div class="headline-text">
             <p>
               I’m a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you like
-              what you see and have a project you need coded, don’t hestiate to
-              contact me.
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
             </p>
           </div>
-  
+
           <p class="let-connect">LET'S CONNECT</p>
-  
+
           <div class="social-media-icons">
             <ul>
               <li>
@@ -239,13 +252,14 @@
                 /></a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/mihreteab-aride-86249812b/"
+                <a href="https://www.linkedin.com/in/mihreteab-aride-86249812b/"
                   ><img src="./Images/Linkedin.svg" alt="Linkedin icon"
                 /></a>
               </li>
               <li>
-                <a href=""><img src="./Images/Medium.svg" alt="Medium icon" /></a>
+                <a href="https://www.linkedin.com/in/mihreteab-aride-86249812b/"
+                  ><img src="./Images/Medium.svg" alt="Medium icon"
+                /></a>
               </li>
               <li>
                 <a href="https://github.com/Mre55"
@@ -253,7 +267,9 @@
                 /></a>
               </li>
               <li>
-                <a href=""><img src="./Images/Angle.svg" alt="AngelList icon" /></a>
+                <a href="https://angel.co/u/mre55"
+                  ><img src="./Images/Angle.svg" alt="AngelList icon"
+                /></a>
               </li>
             </ul>
           </div>
@@ -267,7 +283,7 @@
                 <p>Languages</p>
                 <img src="./Images/down-arrow.svg" alt="Show more arrow icon" />
               </div>
-  
+
               <ul class="about-lang-skills">
                 <li>
                   <button>
@@ -292,7 +308,10 @@
             <li>
               <div class="language">
                 <p>Frameworks</p>
-                <img src="./Images/Right-arrow.svg" alt="Show more arrow icon" />
+                <img
+                  src="./Images/Right-arrow.svg"
+                  alt="Show more arrow icon"
+                />
               </div>
             </li>
             <li>
@@ -301,7 +320,10 @@
             <li>
               <div class="language">
                 <p>Skills</p>
-                <img src="./Images/Right-arrow.svg" alt="Show more arrow icon" />
+                <img
+                  src="./Images/Right-arrow.svg"
+                  alt="Show more arrow icon"
+                />
               </div>
             </li>
             <li>
@@ -309,25 +331,54 @@
             </li>
           </ul>
         </div>
-     </section>
+      </section>
 
-     <section id="contact-form">
-      <div class="contact-text">
+      <section id="contact-form">
+        <div class="contact-text">
           <h2>Contact me</h2>
           <p>
-              If you have an application you are interested in 
-              developing, a feature that you need built or a project 
-              that needs coding. I’d love to help with it 
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
           </p>
-      </div>
-      <form id="myForm" class="form" action="https://formspree.io/f/mzbyqwwq" method="post">
-          <input onchange="handleChange()" name="name" id="fullName" type="text" placeholder="Full name" maxlength="30" required>
-          <input onchange="handleChange()" name="Email" id="email" type="email" placeholder="Email address" required>
-          <textarea onchange="handleChange()" name="text-area" id="comment" placeholder="Write your message here" cols="30" rows="6" maxlength="500" required></textarea>
+        </div>
+        <form
+          id="myForm"
+          class="form"
+          action="https://formspree.io/f/mzbyqwwq"
+          method="post"
+        >
+          <input
+            onchange="handleChange()"
+            name="name"
+            id="fullName"
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <input
+            onchange="handleChange()"
+            name="Email"
+            id="email"
+            type="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            onchange="handleChange()"
+            name="text-area"
+            id="comment"
+            placeholder="Write your message here"
+            cols="30"
+            rows="6"
+            maxlength="500"
+            required
+          ></textarea>
           <small></small>
           <button class="get-it-touch-btn">Get It Touch</button>
-      </form>
-     </section>
+        </form>
+      </section>
     </main>
     <script defer src="./scripts/script.js"></script>
   </body>
