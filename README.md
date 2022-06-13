@@ -1,45 +1,42 @@
 # Portfolio
 
-This is basically about understand how to parse a Figma design to create a UI and use Flexbox to build personal Portfolio.
+This is a project where I built my portfolio website.
 
 ![image](https://user-images.githubusercontent.com/34578631/140739313-052e9749-ed54-4868-8686-f53108b68b56.png)
 
-This Portfolio project set-up GitHub Actions that uses linter for HTML and CSS. This project contains two main sections that are the toolbar (or header) and the headline section (right after the header).
+This Portfolio project set-up GitHub Actions that uses linter for HTML and CSS.
 
 ## Built With
 
 - Major languages: HTML and CSS
-- Technologies used: GitHub for version control
 
 ## Live Demo
 
 [Live Demo Link](https://mre55.github.io/Portfolio/)
 
-
 ## Getting Started
-
-**To use this project you need to clone the repository to your local machine, and open the folder then run index.html file which is the main file of the project.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-To work on this project locally you need to have Node.js installed in your machine.
-
+You must have `Git` and `npm` installed in your machine.
 ### Setup
-
-You need to have text editor (VS code, Atom) or any of your choice.
-
+Run either of the following commands to clone the repository locally:
+```bash
+git clone https://github.com/Mre55/Portfolio.git
+```
+```bash
+git clone git@github.com:Mre55/Portfolio.git
+```
+```
+cd Portfolio
+```
 ### Install
+Run `npm i` to install all the necessary dependencies.
 
-You have to have Node.js installed before working on this project.
-
-### Usage
-
-You can start using Portfolio by cloning the repository.
-
-
+### Run
+Navigate to `index.html` file and right click on it and select `Open with live server`.
+Then open the browser and navigate to `http://127.0.0.1:5500/index.html`.
 
 ## Authors
 
