@@ -30,6 +30,7 @@
       <a href="#headline-section" class="header-logo">Home</a>
       <nav>
         <button
+          type="button"
           class="only-mobile hamburger-btn"
           data-mobile-menu-target="#mobile-menu"
         >
@@ -44,7 +45,9 @@
     </header>
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-header">
-        <button data-close-button class="close-button">&times;</button>
+        <button type="button" data-close-button class="close-button">
+          &times;
+        </button>
       </div>
       <ul class="mobile-menu-list">
         <li><a href="#work-section">Portfolio</a></li>
@@ -103,7 +106,7 @@
       </section>
 
       <section id="work-section">
-        <article class="work-container flex">
+        <div class="work-container flex">
           <div class="work-img img-one"></div>
           <div class="work-description">
             <h3>Space Traveler's HUB</h3>
@@ -127,15 +130,15 @@
               are subscribed to.
             </p>
             <ul class="buttons">
-              <li><button>React</button></li>
-              <li><button>Redux</button></li>
-              <li><button>React-Router</button></li>
-              <li><button>TailwindCSS</button></li>
-              <li><button>Webpack</button></li>
+              <li><button type="button">React</button></li>
+              <li><button type="button">Redux</button></li>
+              <li><button type="button">React-Router</button></li>
+              <li><button type="button">TailwindCSS</button></li>
+              <li><button type="button">Webpack</button></li>
             </ul>
-            <button id="1" class="see-project-btn">See Project</button>
+            <button type="button" id="1" class="see-project-btn">See Project</button>
           </div>
-        </article>
+        </div>
 
         <article class="work-container flex">
           <div class="work-img img-three"></div>
@@ -143,7 +146,10 @@
             <h3>Microvago</h3>
             <div class="client-des">
               <ul class="client-name">
-                <li>Contributors: Mihreteab Misganaw, Shady Shawkat, Luis Abarca,Omar Muhammad, Santiago Velosa </li>
+                <li>
+                  Contributors: Mihreteab Misganaw, Shady Shawkat, Luis
+                  Abarca,Omar Muhammad, Santiago Velosa
+                </li>
               </ul>
               <ul>
                 <li>Full-stack website</li>
@@ -198,7 +204,7 @@
               <li><button type="button">Webpack</button></li>
               <li><button type="button">Bookstore API</button></li>
             </ul>
-            <button id="2" class="see-project-btn">See Project</button>
+            <button type="button" id="2" class="see-project-btn">See Project</button>
           </div>
         </article>
 
@@ -223,11 +229,11 @@
               modifies the DOM and adds basic events.
             </p>
             <ul class="buttons">
-              <li><button disabled>html</button></li>
-              <li><button disabled>css</button></li>
-              <li><button disabled>javaScript</button></li>
+              <li><button type="button" disabled>html</button></li>
+              <li><button type="button" disabled>css</button></li>
+              <li><button type="button" disabled>javaScript</button></li>
             </ul>
-            <button id="4" class="see-project-btn">See Project</button>
+            <button type="button" id="4" class="see-project-btn">See Project</button>
           </div>
         </article>
       </section>
@@ -276,7 +282,7 @@
               </li>
             </ul>
           </div>
-          <button class="get-my-resume-btn">Get my resume</button>
+          <button type="button" class="get-my-resume-btn">Get my resume</button>
         </div>
 
         <div class="about-section-skill">
@@ -289,19 +295,19 @@
 
               <ul class="about-lang-skills">
                 <li>
-                  <button>
+                  <button type="button">
                     <img src="./Images/javaScript-icon.png" alt="" />
                     <span>JavaScript</span>
                   </button>
                 </li>
                 <li>
-                  <button>
+                  <button type="button">
                     <img src="./Images/HTML.png" alt="" />
                     <span>HTML</span>
                   </button>
                 </li>
                 <li>
-                  <button>
+                  <button type="button">
                     <img src="./Images/CSS.png" alt="" />
                     <span>CSS</span>
                   </button>
@@ -379,7 +385,7 @@
             required
           ></textarea>
           <small></small>
-          <button class="get-it-touch-btn">Get It Touch</button>
+          <button type="button" class="get-it-touch-btn">Get It Touch</button>
         </form>
       </section>
     </main>
