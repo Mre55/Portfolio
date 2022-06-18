@@ -214,6 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-fullNameForm.onchange = handleChange;
-emailForm.onchange = handleChange;
-commentForm.onchange = handleChange;
+fullNameForm.onkeyup = handleChange;
+emailForm.onkeyup = handleChange;
+commentForm.onkeyup = handleChange;
